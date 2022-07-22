@@ -1,0 +1,230 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.first-font{
+    font-size: 3.7em;
+    
+}
+.banner-p{
+    font-size: 12px;
+}
+.half-txt{
+    width: 50%;
+    padding: 50px;
+}
+.banner-flex{
+    display: flex;
+    background-color: black;
+    justify-items: center;    
+    margin-left: 10px;    
+    width: 1321px;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 15px;
+    
+}
+.live-anchor{
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 7px;
+}
+.banner-flex h1, p{
+    color: white;
+}
+.half-image{
+    
+    display: grid;
+   align-items: stretch;
+   margin-left: 10%;
+   
+    
+    
+    
+}
+.first-hover{
+    transition: 0.1;
+}
+.first-hover:hover {
+    color: white;
+    background-color: red;
+    
+}
+
+
+.flex-sec{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 20%;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+.second-achor{
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 152px;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+.grid-sec{
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+    height: 350px;
+    width: 310px;
+    padding: 20px;
+}
+.p-border{
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 5px;
+}
+.p-black{
+    color: black;
+    
+}
+.weight-txt{
+    font-weight: 1000;
+}
+.grey-text{
+    color: grey;
+}
+.fa-regular .fa-clock{
+    color: grey;
+}
+.fa-solid .fa-message{
+    color: grey;
+}
+.little-flex{
+    display: flex;
+    
+}
+.blog-sec{
+    background-color: red !important;
+    color: aliceblue !important;
+}
+.left-margin{
+    margin-left: 50px;
+}
+.complex-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.second-section{
+    display: flex;
+    height: 250px;
+}
+.footer-section{
+    margin-top: 700px;
+    background-color: black;
+    height: 400px;
+}
+hr{ 
+    border: 1px solid lightgrey;
+    margin-bottom: 100px;
+}
+.footer-list{
+    text-decoration: none;
+    color: lightgrey;
+}
+.list-section{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-head{
+    color: white;
+}
+.footer-head-sec{
+    height: 200px;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mobile device */
+
+@media only screen and (max-width:688px){
+    .container{
+        width: 300%;
+        font-size: 10px;
+        text-align: center;
+    }
+    
+    
+    
+        .flex-sec{
+            display: none;
+        }
+        
+        .mobile-flex{
+            flex-direction: row;
+            row-gap: 10px;
+        }
+        .complex-grid{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .footer-section{
+            margin-top: 2500px;
+            width: 35%;
+        }
+        .list-section{
+            flex-direction: column;
+            margin-bottom: 10%;
+            margin-top: -40px;
+        }
+        
+        
+    }
+
+    /* Tab device */
+
+    @media only screen and (min-width: 688px) and (max-width:992px){
+        .container{
+            width: 165%;
+            
+
+        }
+        .complex-grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+    }
+    .footer-section{
+        margin-top: 1500px;
+        margin-left: 100px;
+    }
+    .flex-sec{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: black;
+        width: 95%;
+        align-items: center;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 7px;
+        
+    }
+    .second-section{
+        flex-direction: column;
+        height: 250px;
+
+    }
+}
